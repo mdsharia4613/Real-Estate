@@ -1,8 +1,22 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IoIosSearch } from "react-icons/io";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // MUST
 
 const HeroSection = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: false,
+            delay: 100,
+            easing: "ease",
+        });
+
+        AOS.refresh();
+    }, []);
+
     const [activeTab, setActiveTab] = useState("Buy");
 
     const isActive = (tab) =>
@@ -11,9 +25,8 @@ const HeroSection = () => {
             : "text-gray-500 hover:text-[#eb6753]";
 
     return (
-        <div className="banner text-white flex flex-col items-center justify-center text-center px-4">
-
-            <div>
+        <div className="banner pt-32 text-white flex flex-col items-center justify-center text-center px-4">
+            <div data-aos="fade-up">
                 <h2 className="text-sm md:text-xl font-medium">THE BEST WAY TO</h2>
                 <h1 className="text-4xl md:text-6xl font-bold my-3">Find Your Dream Home</h1>
                 <p className="text-sm md:text-base">
@@ -21,34 +34,13 @@ const HeroSection = () => {
                 </p>
             </div>
 
-            {/* Filter Box */}
-            <div className="bg-white text-black mt-10 p-5 rounded-xl shadow-lg w-full max-w-3xl">
-
-                {/* Tabs */}
+            <div data-aos="fade-up" className="bg-white text-black mt-10 p-5 rounded-xl shadow-lg w-full max-w-3xl">
                 <div className="flex gap-6 font-medium border-b border-gray-400 pb-2 ">
-                    <button
-                        className={isActive("Buy")}
-                        onClick={() => setActiveTab("Buy")}
-                    >
-                        Buy
-                    </button>
-
-                    <button
-                        className={isActive("Rent")}
-                        onClick={() => setActiveTab("Rent")}
-                    >
-                        Rent
-                    </button>
-
-                    <button
-                        className={isActive("Sold")}
-                        onClick={() => setActiveTab("Sold")}
-                    >
-                        Sold
-                    </button>
+                    <button className={isActive("Buy")} onClick={() => setActiveTab("Buy")}>Buy</button>
+                    <button className={isActive("Rent")} onClick={() => setActiveTab("Rent")}>Rent</button>
+                    <button className={isActive("Sold")} onClick={() => setActiveTab("Sold")}>Sold</button>
                 </div>
 
-                {/* Search Box */}
                 <div className="flex items-center gap-3 mt-5">
                     <input
                         type="text"
