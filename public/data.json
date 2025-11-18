@@ -1,0 +1,466 @@
+[
+    {
+        "category": "Houses",
+        "id": 1,
+        "propertyID": "H001",
+        "title": "Cozy Family House",
+        "img": "/images/houses/house1.jpg",
+        "oldPrice": 260000,
+        "newPrice": 250000,
+        "description": "This cozy family house offers a spacious living area with modern kitchen and dining room, three comfortable bedrooms, two bathrooms, and a beautiful garden perfect for children and pets. Features include energy-efficient appliances, smart home system, and a private garage. Ideal for families looking for comfort and convenience in a peaceful neighborhood.",
+        "propertySize": "1800 sqft",
+        "bathrooms": 2,
+        "bedrooms": 3,
+        "garage": 2,
+        "garageSize": "400 sqft",
+        "yearBuilt": 2015,
+        "propertyStatus": "For Sale",
+        "address": [
+            {
+                "street": "123 Maple Street",
+                "city": "New York",
+                "stateCountry": "USA"
+            },
+            {
+                "street": "456 Pine Road",
+                "city": "Los Angeles",
+                "stateCountry": "USA"
+            }
+        ]
+    },
+    {
+        "category": "Houses",
+        "id": 2,
+        "propertyID": "H002",
+        "title": "Luxury Modern House",
+        "img": "/images/houses/house2.jpg",
+        "oldPrice": 470000,
+        "newPrice": 450000,
+        "description": "Luxury modern house featuring five bedrooms, four bathrooms, and a state-of-the-art kitchen. Large windows provide natural light throughout the house. Includes a private swimming pool, landscaped garden, home office, and a smart security system. The garage accommodates three cars. Perfect for families seeking elegance, comfort, and top-notch amenities.",
+        "propertySize": "3000 sqft",
+        "bathrooms": 4,
+        "bedrooms": 5,
+        "garage": 3,
+        "garageSize": "600 sqft",
+        "yearBuilt": 2020,
+        "propertyStatus": "For Sale",
+        "address": [
+            {
+                "street": "789 Oak Avenue",
+                "city": "Toronto",
+                "stateCountry": "Canada"
+            },
+            {
+                "street": "101 Maple Lane",
+                "city": "Vancouver",
+                "stateCountry": "Canada"
+            }
+        ]
+    },
+    {
+        "category": "Apartments",
+        "id": 3,
+        "propertyID": "A001",
+        "title": "City View Apartment",
+        "img": "/images/apartments/apartment1.jpg",
+        "oldPrice": 125000,
+        "newPrice": 120000,
+        "description": "Modern apartment in the city center with stunning views. Features include two bedrooms, two bathrooms, open-plan kitchen and living area, balcony with city view, and access to community gym and swimming pool. Secure building with 24/7 surveillance and underground parking. Ideal for professionals or small families who want to enjoy city life with convenience.",
+        "propertySize": "900 sqft",
+        "bathrooms": 2,
+        "bedrooms": 2,
+        "garage": 1,
+        "garageSize": "200 sqft",
+        "yearBuilt": 2018,
+        "propertyStatus": "For Rent",
+        "address": [
+            {
+                "street": "12 Skyline Road",
+                "city": "London",
+                "stateCountry": "UK"
+            },
+            {
+                "street": "34 River Street",
+                "city": "Manchester",
+                "stateCountry": "UK"
+            }
+        ]
+    },
+    {
+        "category": "Apartments",
+        "id": 4,
+        "propertyID": "A002",
+        "title": "Luxury Penthouse",
+        "img": "/images/apartments/apartment2.jpg",
+        "oldPrice": 260000,
+        "newPrice": 250000,
+        "description": "Spacious penthouse with three bedrooms and three bathrooms. Includes private rooftop terrace with panoramic views, modern kitchen with high-end appliances, and designer furnishings. Secure building with concierge service, parking, and gym. Perfect for those seeking luxury living in the heart of the city.",
+        "propertySize": "1500 sqft",
+        "bathrooms": 3,
+        "bedrooms": 3,
+        "garage": 2,
+        "garageSize": "400 sqft",
+        "yearBuilt": 2021,
+        "propertyStatus": "For Sale",
+        "address": [
+            {
+                "street": "78 Sunset Boulevard",
+                "city": "Dubai",
+                "stateCountry": "UAE"
+            },
+            {
+                "street": "90 Palm Avenue",
+                "city": "Abu Dhabi",
+                "stateCountry": "UAE"
+            }
+        ]
+    },
+    {
+        "category": "Office",
+        "id": 5,
+        "propertyID": "O001",
+        "title": "Downtown Office Space",
+        "img": "/images/offices/office1.jpg",
+        "oldPrice": 520000,
+        "newPrice": 500000,
+        "description": "Large office space with open floor plan, conference rooms, and premium amenities. Located in the business district with easy access to public transport and nearby restaurants. Includes reception area, pantry, high-speed internet, and underground parking. Ideal for startups or established companies looking for a modern workspace.",
+        "propertySize": "5000 sqft",
+        "bathrooms": 4,
+        "bedrooms": 0,
+        "garage": 5,
+        "garageSize": "800 sqft",
+        "yearBuilt": 2010,
+        "propertyStatus": "For Rent",
+        "address": [
+            {
+                "street": "101 Central Avenue",
+                "city": "Berlin",
+                "stateCountry": "Germany"
+            },
+            {
+                "street": "202 Tech Street",
+                "city": "Munich",
+                "stateCountry": "Germany"
+            }
+        ]
+    },
+    {
+        "category": "Office",
+        "id": 6,
+        "propertyID": "O002",
+        "title": "Modern Co-working Space",
+        "img": "/images/offices/office2.jpg",
+        "oldPrice": 400000,
+        "newPrice": 380000,
+        "description": "A fully equipped co-working space featuring private cabins, open desks, meeting rooms, and a community lounge. High-speed Wi-Fi, coffee bar, and 24/7 security included. Conveniently located in the financial district with public transportation nearby. Suitable for freelancers, remote teams, and startups.",
+        "propertySize": "3500 sqft",
+        "bathrooms": 3,
+        "bedrooms": 0,
+        "garage": 3,
+        "garageSize": "500 sqft",
+        "yearBuilt": 2018,
+        "propertyStatus": "For Rent",
+        "address": [
+            {
+                "street": "55 Innovation Drive",
+                "city": "Paris",
+                "stateCountry": "France"
+            },
+            {
+                "street": "77 Startup Avenue",
+                "city": "Lyon",
+                "stateCountry": "France"
+            }
+        ]
+    },
+    {
+        "category": "Villa",
+        "id": 7,
+        "propertyID": "V001",
+        "title": "Beachside Villa",
+        "img": "/images/villas/villa1.jpg",
+        "oldPrice": 820000,
+        "newPrice": 800000,
+        "description": "Luxurious villa by the beach with private pool, garden, and outdoor lounge area. Features four bedrooms, five bathrooms, modern kitchen, home theater, and spacious living areas. High-end finishes and panoramic sea views. Ideal for families or vacation retreats.",
+        "propertySize": "4000 sqft",
+        "bathrooms": 5,
+        "bedrooms": 4,
+        "garage": 3,
+        "garageSize": "600 sqft",
+        "yearBuilt": 2019,
+        "propertyStatus": "For Sale",
+        "address": [
+            {
+                "street": "7 Ocean Drive",
+                "city": "Malibu",
+                "stateCountry": "USA"
+            },
+            {
+                "street": "9 Seaside Road",
+                "city": "Miami",
+                "stateCountry": "USA"
+            }
+        ]
+    },
+    {
+        "category": "Villa",
+        "id": 8,
+        "propertyID": "V002",
+        "title": "Mountain View Villa",
+        "img": "/images/villas/villa2.jpg",
+        "oldPrice": 900000,
+        "newPrice": 880000,
+        "description": "Spacious villa with mountain views, five bedrooms, four bathrooms, private pool, landscaped garden, and entertainment area. Modern kitchen, gym, and home office included. Perfect for luxury living with tranquility and nature around.",
+        "propertySize": "4500 sqft",
+        "bathrooms": 4,
+        "bedrooms": 5,
+        "garage": 3,
+        "garageSize": "650 sqft",
+        "yearBuilt": 2021,
+        "propertyStatus": "For Sale",
+        "address": [
+            {
+                "street": "12 Alpine Street",
+                "city": "Zurich",
+                "stateCountry": "Switzerland"
+            },
+            {
+                "street": "25 Lake View Road",
+                "city": "Geneva",
+                "stateCountry": "Switzerland"
+            }
+        ]
+    },
+    {
+        "category": "Townhome",
+        "id": 9,
+        "propertyID": "T001",
+        "title": "Modern Townhome",
+        "img": "/images/townhomes/townhome1.jpg",
+        "oldPrice": 320000,
+        "newPrice": 310000,
+        "description": "Three-story townhome with three bedrooms, two bathrooms, modern kitchen, and open living/dining area. Balcony with city view, parking space, and community amenities like pool and gym. Ideal for families looking for urban living with comfort and style.",
+        "propertySize": "2000 sqft",
+        "bathrooms": 2,
+        "bedrooms": 3,
+        "garage": 2,
+        "garageSize": "350 sqft",
+        "yearBuilt": 2017,
+        "propertyStatus": "For Sale",
+        "address": [
+            {
+                "street": "101 City Lane",
+                "city": "Sydney",
+                "stateCountry": "Australia"
+            },
+            {
+                "street": "202 Harbor Street",
+                "city": "Melbourne",
+                "stateCountry": "Australia"
+            }
+        ]
+    },
+    {
+        "category": "Townhome",
+        "id": 10,
+        "propertyID": "T002",
+        "title": "Luxury Townhome",
+        "img": "/images/townhomes/townhome2.jpg",
+        "oldPrice": 350000,
+        "newPrice": 340000,
+        "description": "Elegant townhome with four bedrooms, three bathrooms, rooftop terrace, and modern kitchen. Includes private garage and access to gated community amenities. Designed for comfort, security, and sophisticated urban lifestyle.",
+        "propertySize": "2200 sqft",
+        "bathrooms": 3,
+        "bedrooms": 4,
+        "garage": 2,
+        "garageSize": "400 sqft",
+        "yearBuilt": 2019,
+        "propertyStatus": "For Sale",
+        "address": [
+            {
+                "street": "55 Riverside Avenue",
+                "city": "Toronto",
+                "stateCountry": "Canada"
+            },
+            {
+                "street": "66 Maple Street",
+                "city": "Ottawa",
+                "stateCountry": "Canada"
+            }
+        ]
+    },
+    {
+        "category": "Bungalow",
+        "id": 11,
+        "propertyID": "B001",
+        "title": "Cozy Bungalow",
+        "img": "/images/bungalows/bungalow1.jpg",
+        "oldPrice": 180000,
+        "newPrice": 175000,
+        "description": "Single-story bungalow with two bedrooms, two bathrooms, open kitchen and living area. Features a backyard garden, private garage, and cozy interiors. Perfect for small families or retirees seeking comfort and simplicity.",
+        "propertySize": "1200 sqft",
+        "bathrooms": 2,
+        "bedrooms": 2,
+        "garage": 1,
+        "garageSize": "250 sqft",
+        "yearBuilt": 2012,
+        "propertyStatus": "For Sale",
+        "address": [
+            {
+                "street": "10 Maple Lane",
+                "city": "Amsterdam",
+                "stateCountry": "Netherlands"
+            },
+            {
+                "street": "15 Tulip Street",
+                "city": "Rotterdam",
+                "stateCountry": "Netherlands"
+            }
+        ]
+    },
+    {
+        "category": "Bungalow",
+        "id": 12,
+        "propertyID": "B002",
+        "title": "Luxury Bungalow",
+        "img": "/images/bungalows/bungalow2.jpg",
+        "oldPrice": 220000,
+        "newPrice": 210000,
+        "description": "Luxurious single-story bungalow with three bedrooms, two bathrooms, modern kitchen, spacious living room, and landscaped garden. Includes garage and terrace. Designed for comfort, style, and privacy.",
+        "propertySize": "1600 sqft",
+        "bathrooms": 2,
+        "bedrooms": 3,
+        "garage": 2,
+        "garageSize": "300 sqft",
+        "yearBuilt": 2018,
+        "propertyStatus": "For Sale",
+        "address": [
+            {
+                "street": "5 Palm Avenue",
+                "city": "Lisbon",
+                "stateCountry": "Portugal"
+            },
+            {
+                "street": "12 Ocean Drive",
+                "city": "Porto",
+                "stateCountry": "Portugal"
+            }
+        ]
+    },
+    {
+        "category": "Loft",
+        "id": 13,
+        "propertyID": "L001",
+        "title": "Industrial Loft",
+        "img": "/images/lofts/loft1.jpg",
+        "oldPrice": 150000,
+        "newPrice": 145000,
+        "description": "Spacious industrial loft with open floor plan, high ceilings, exposed beams, and modern kitchen. Includes one bedroom, one bathroom, and parking space. Perfect for artists, professionals, or couples who enjoy modern city living.",
+        "propertySize": "1000 sqft",
+        "bathrooms": 1,
+        "bedrooms": 1,
+        "garage": 1,
+        "garageSize": "200 sqft",
+        "yearBuilt": 2016,
+        "propertyStatus": "For Sale",
+        "address": [
+            {
+                "street": "20 Factory Road",
+                "city": "Berlin",
+                "stateCountry": "Germany"
+            },
+            {
+                "street": "22 Loft Street",
+                "city": "Hamburg",
+                "stateCountry": "Germany"
+            }
+        ]
+    },
+    {
+        "category": "Loft",
+        "id": 14,
+        "propertyID": "L002",
+        "title": "Luxury City Loft",
+        "img": "/images/lofts/loft2.jpg",
+        "oldPrice": 180000,
+        "newPrice": 175000,
+        "description": "Modern luxury loft featuring high ceilings, large windows, open living and dining area, fully equipped kitchen, one bedroom, and one bathroom. Includes private parking and rooftop access with panoramic city views. Ideal for young professionals seeking stylish urban lifestyle.",
+        "propertySize": "1200 sqft",
+        "bathrooms": 1,
+        "bedrooms": 1,
+        "garage": 1,
+        "garageSize": "250 sqft",
+        "yearBuilt": 2019,
+        "propertyStatus": "For Sale",
+        "address": [
+            {
+                "street": "30 Central Avenue",
+                "city": "New York",
+                "stateCountry": "USA"
+            },
+            {
+                "street": "35 Park Lane",
+                "city": "Boston",
+                "stateCountry": "USA"
+            }
+        ]
+    },
+    {
+        "category": "Houses",
+        "id": 15,
+        "propertyID": "H003",
+        "title": "Suburban Family House",
+        "img": "/images/houses/house3.jpg",
+        "oldPrice": 300000,
+        "newPrice": 290000,
+        "description": "Beautiful suburban house with four bedrooms, three bathrooms, modern kitchen, spacious living area, garden, and garage. Includes smart home system and energy-efficient appliances. Located in a safe neighborhood with good schools nearby.",
+        "propertySize": "2500 sqft",
+        "bathrooms": 3,
+        "bedrooms": 4,
+        "garage": 2,
+        "garageSize": "450 sqft",
+        "yearBuilt": 2017,
+        "propertyStatus": "For Sale",
+        "address": [
+            {
+                "street": "15 Willow Street",
+                "city": "Chicago",
+                "stateCountry": "USA"
+            },
+            {
+                "street": "20 River Lane",
+                "city": "Boston",
+                "stateCountry": "USA"
+            }
+        ]
+    },
+    {
+        "category": "Apartments",
+        "id": 16,
+        "propertyID": "A003",
+        "title": "Modern Urban Apartment",
+        "img": "/images/apartments/apartment3.jpg",
+        "oldPrice": 140000,
+        "newPrice": 135000,
+        "description": "Stylish urban apartment with two bedrooms, two bathrooms, modern kitchen, and open living area. Includes balcony, access to gym and swimming pool, secure parking, and 24/7 security. Perfect for professionals or small families seeking city lifestyle.",
+        "propertySize": "1000 sqft",
+        "bathrooms": 2,
+        "bedrooms": 2,
+        "garage": 1,
+        "garageSize": "220 sqft",
+        "yearBuilt": 2020,
+        "propertyStatus": "For Sale",
+        "address": [
+            {
+                "street": "50 City Center Road",
+                "city": "Toronto",
+                "stateCountry": "Canada"
+            },
+            {
+                "street": "60 Maple Street",
+                "city": "Vancouver",
+                "stateCountry": "Canada"
+            }
+        ]
+    }
+]
