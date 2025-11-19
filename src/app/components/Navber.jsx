@@ -69,13 +69,13 @@ const Navber = () => {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3">
                         <TbHomeEco fontSize={36} className="bg-[#eb6753] text-white p-2 rounded-xl" />
-                        <h2 className="text-2xl font-semibold">HomeZ</h2>
+                        <h2 className="text-2xl font-semibold text-gray-700">HomeZ</h2>
                     </Link>
                 </div>
 
                 {/* CENTER */}
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="flex items-center gap-10 px-1 font-semibold">
+                    <ul className="flex items-center gap-10 px-1 font-semibold text-gray-700">
                         <li className={isActive("/")}><Link href="/">Home</Link></li>
                         <li className={isActive("/listing")}><Link href="/listing">Listing</Link></li>
                         <li className={isActive("/property")}><Link href="/property">Property</Link></li>
@@ -85,7 +85,7 @@ const Navber = () => {
                 </div>
 
                 {/* RIGHT */}
-                <div className="navbar-end flex items-center gap-4">
+                <div className="navbar-end flex items-center gap-4 text-gray-700">
                     <FaRegHeart className="text-xl cursor-pointer hover:text-[#eb6753]" />
                     <FaUserCircle className="text-xl cursor-pointer hover:text-[#eb6753]" />
                     <Link href="/login" className="hover:text-[#eb6753]">Login/Register</Link>
