@@ -1,4 +1,5 @@
 import ApartmentType from "./home/ApartmentType";
+import FeaturedListing from "./home/FeaturedListing";
 import HeroSection from "./home/HeroSection";
 import Section3 from "./home/Section3";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <HeroSection></HeroSection>
       <ApartmentType></ApartmentType>
       <Section3></Section3>
+      <FeaturedListing></FeaturedListing>
     </>
   );
 }

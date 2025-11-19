@@ -56,7 +56,7 @@ const Navber = () => {
 
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-white rounded-box mt-3 w-52 p-2 shadow text-black"
+                            className="menu menu-sm dropdown-content bg-white rounded-box mt-3 w-52 p-2 shadow text-black font-semibold"
                         >
                             <li className={isActive("/")}><Link href="/">Home</Link></li>
                             <li className={isActive("/listing")}><Link href="/listing">Listing</Link></li>
@@ -75,7 +75,7 @@ const Navber = () => {
 
                 {/* CENTER */}
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="flex items-center gap-10 px-1">
+                    <ul className="flex items-center gap-10 px-1 font-semibold">
                         <li className={isActive("/")}><Link href="/">Home</Link></li>
                         <li className={isActive("/listing")}><Link href="/listing">Listing</Link></li>
                         <li className={isActive("/property")}><Link href="/property">Property</Link></li>

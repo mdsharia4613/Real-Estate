@@ -25,7 +25,7 @@ const Section3 = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
                 {/* Card 1 */}
-                <div data-aos="fade-up" className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1 duration-300 space-y-4 text-center">
+                <div data-aos="fade-up" className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all  duration-500  space-y-4 text-center">
                     <div className="flex justify-center">
                         <Image src="/image/sell.svg" alt="sell" width={110} height={50} />
                     </div>
@@ -42,7 +42,7 @@ const Section3 = () => {
                 </div>
 
                 {/* Card 2 */}
-                <div data-aos="fade-up" className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1 duration-300 space-y-4 text-center">
+                <div data-aos="fade-up" className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all  duration-500 space-y-4 text-center">
                     <div className="flex justify-center">
                         <Image src="/image/rent.svg" alt="rent" width={110} height={50} />
                     </div>
@@ -59,7 +59,7 @@ const Section3 = () => {
                 </div>
 
                 {/* Card 3 */}
-                <div data-aos="fade-up" className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1 duration-300 space-y-4 text-center">
+                <div data-aos="fade-up" className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all  duration-500 space-y-4 text-center">
                     <div className="flex justify-center">
                         <Image src="/image/porperty.svg" alt="property" width={110} height={50} />
                     </div>
