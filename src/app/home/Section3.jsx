@@ -8,7 +8,7 @@ import AOS from 'aos';
 const Section3 = () => {
     useEffect(() => {
         AOS.init({
-            duration: 800,
+            duration: 8000,
             once: false,
             delay: 50,
             animatedClassName: 'aos-animate',
