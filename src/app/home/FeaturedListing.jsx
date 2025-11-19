@@ -67,7 +67,7 @@ const FeaturedListing = () => {
                         <div
                             key={card.id}
                             className="bg-white rounded-xl shadow-lg flex flex-col justify-between hover:shadow-2xl transition duration-300 mb-16 space-y-3 relative group"
-                            // data-aos="zoom-in-up"   // <-- AOS animation added here
+                             data-aos="zoom-in-up"   // <-- AOS animation added here
                         >
 
                             {/* Image Section */}
