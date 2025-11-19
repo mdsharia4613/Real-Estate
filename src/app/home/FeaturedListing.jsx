@@ -10,6 +10,7 @@ import "react-multi-carousel/lib/styles.css";
 import { IoBedOutline } from "react-icons/io5";
 import { LandPlot } from 'lucide-react';
 import { FaRegCopy, FaRegHeart } from 'react-icons/fa';
+import { HiOutlineLightningBolt } from "react-icons/hi";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -46,8 +47,8 @@ const FeaturedListing = () => {
                 </div>
 
                 <Carousel
-                    swipeable={false}
-                    draggable={false}
+                    swipeable={true}
+                    draggable={true}
                     showDots={true}
                     responsive={responsive}
                     ssr={true}
@@ -57,15 +58,16 @@ const FeaturedListing = () => {
                     customTransition="all .5"
                     transitionDuration={500}
                     containerClass="carousel-container"
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
+                    // removeArrowOnDeviceType={["tablet", "mobile"]}
+                    arrows={false}
                     dotListClass="absolute bottom-2"
                     itemClass="px-5"
                 >
                     {cards.map(card => (
                         <div
                             key={card.id}
-                            className="bg-white rounded-xl shadow-lg flex flex-col justify-between hover:shadow-2xl transition duration-300"
-                            data-aos="zoom-in-up"   // <-- AOS animation added here
+                            className="bg-white rounded-xl shadow-lg flex flex-col justify-between hover:shadow-2xl transition duration-300 mb-16 space-y-3 relative group"
+                            // data-aos="zoom-in-up"   // <-- AOS animation added here
                         >
 
                             {/* Image Section */}
@@ -74,8 +76,8 @@ const FeaturedListing = () => {
                                     src={card.img}
                                     alt={card.title}
                                     width={450}
-                                    height={250}
-                                    className="w-full h-56 md:h-64 lg:h-72 object-cover transition-transform duration-500 hover:scale-105 hover:-translate-x-2"
+                                    height={200}
+                                    className="w-full h-56 md:h-64 lg:h-72 object-cover transition-transform duration-500 hover:scale-105 hover:-rotate-3"
                                 />
                             </div>
 
@@ -100,6 +102,17 @@ const FeaturedListing = () => {
                                     <FaRegCopy className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
                                     <FaRegHeart className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
                                 </div>
+                            </div>
+
+                            <div className='absolute bg-white px-4 py-1.5 rounded-xl top-56 left-3'>
+                                <span className='font-semibold'>${card.newPrice} </span>/ mo
+                            </div>
+
+                            <div className='bgcpr absolute text-white px-3 py-1.5 flex items-center gap-1 rounded-xl top-2 left-2 opacity-100 scale-100 transition-all duration-500 
+        group-hover:opacity-0 group-hover:scale-75'>
+                                <HiOutlineLightningBolt />
+
+                                <p>Featured</p>
                             </div>
 
                         </div>
