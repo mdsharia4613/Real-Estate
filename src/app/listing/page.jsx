@@ -30,6 +30,8 @@ const Listing = () => {
         selectedCategory === "All"
             ? items
             : items.filter(item => item.category === selectedCategory);
+    
+            
 
     return (
         <div className='mt-20 bg-[#f7f7f7]'>
@@ -68,6 +70,10 @@ const Listing = () => {
                                 <span>{cat}</span>
                             </label>
                         ))}
+
+                        {
+
+                        }
                     </div>
 
                     {/* RIGHT — CARD GRID */}
