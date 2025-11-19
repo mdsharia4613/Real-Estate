@@ -4,11 +4,12 @@ import Link from 'next/link';
 import React, { useEffect } from 'react';
 import { MdArrowOutward } from "react-icons/md";
 import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Section3 = () => {
     useEffect(() => {
         AOS.init({
-            duration: 8000,
+            duration: 800,
             once: false,
             delay: 50,
             animatedClassName: 'aos-animate',

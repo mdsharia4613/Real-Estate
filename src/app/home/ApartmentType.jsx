@@ -5,7 +5,8 @@ import React, { useEffect, useState } from 'react';
 import { FaHome, FaRegBuilding, FaBriefcase, FaCity, FaHouseUser, FaWarehouse } from "react-icons/fa";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import AOS from 'aos';
+
+
 
 const getCategoryIcon = (category) => {
     

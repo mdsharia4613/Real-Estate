@@ -10,6 +10,8 @@ import "react-multi-carousel/lib/styles.css";
 import { IoBedOutline } from "react-icons/io5";
 import { LandPlot } from 'lucide-react';
 import { FaRegCopy, FaRegHeart } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const FeaturedListing = () => {
     const [cards, setCards] = useState([]);
@@ -18,6 +20,12 @@ const FeaturedListing = () => {
         fetch("/data.json")
             .then(res => res.json())
             .then(data => setCards(data));
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,  // animation duration
+            once: false       // animation occur only once
+        });
     }, [])
 
     const responsive = {
@@ -54,7 +62,11 @@ const FeaturedListing = () => {
                     itemClass="px-5"
                 >
                     {cards.map(card => (
-                        <div key={card.id} className="bg-white rounded-xl shadow-lg flex flex-col justify-between hover:shadow-2xl transition duration-300">
+                        <div
+                            key={card.id}
+                            className="bg-white rounded-xl shadow-lg flex flex-col justify-between hover:shadow-2xl transition duration-300"
+                            data-aos="zoom-in-up"   // <-- AOS animation added here
+                        >
 
                             {/* Image Section */}
                             <div className='overflow-hidden rounded-t-xl'>
@@ -63,7 +75,7 @@ const FeaturedListing = () => {
                                     alt={card.title}
                                     width={450}
                                     height={250}
-                                    className="w-full h-56 md:h-64 lg:h-72 object-cover transition-transform duration-500 hover:scale-105 hover:translate-x-2"
+                                    className="w-full h-56 md:h-64 lg:h-72 object-cover transition-transform duration-500 hover:scale-105 hover:-translate-x-2"
                                 />
                             </div>
 
@@ -84,9 +96,7 @@ const FeaturedListing = () => {
                             <div className='flex justify-between items-center px-4 py-3'>
                                 <p className="font-semibold hover:text-[#eb6753] transition duration-500">{card.propertyStatus}</p>
                                 <div className='flex items-center gap-3 text-gray-600'>
-                                    <Link href="/listing">
-                                        <FaArrowUpRightFromSquare className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
-                                    </Link>
+                                    <FaArrowUpRightFromSquare className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
                                     <FaRegCopy className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
                                     <FaRegHeart className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
                                 </div>
