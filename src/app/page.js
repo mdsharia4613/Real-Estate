@@ -1,4 +1,5 @@
 import ApartmentType from "./home/ApartmentType";
+import Comments from "./home/Comments";
 import FeaturedListing from "./home/FeaturedListing";
 import HeroSection from "./home/HeroSection";
 import PropertiesCities from "./home/PropertiesCities";
@@ -15,6 +16,7 @@ export default function Home() {
       <FeaturedListing></FeaturedListing>
       <PropertiesCities></PropertiesCities>
       <SellingOption></SellingOption>
+      <Comments></Comments>
     </>
   );
 }

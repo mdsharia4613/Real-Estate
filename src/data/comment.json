@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "Great Work",
+        "review": "Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.",
+        "rating": 5,
+        "name": "Leslie Alexander",
+        "position": "Nintendo",
+        "img": "/image/user1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Excellent Experience",
+        "review": "The platform is extremely flexible, user-friendly and super fast. Customizing layouts was smoother than expected. Perfect for building modern real estate interfaces.",
+        "rating": 5,
+        "name": "Floyd Miles",
+        "position": "Bank of America",
+        "img": "/image/user2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Highly Recommended",
+        "review": "I love the clean UI, great design system and effortless integration. The entire process from setup to deployment was seamless and efficient.",
+        "rating": 5,
+        "name": "Courtney Henry",
+        "position": "Google",
+        "img": "/image/user3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Superb Quality",
+        "review": "The cloud-based features and optimized performance helped improve our workflow significantly. The design customization experience is top-notch.",
+        "rating": 5,
+        "name": "Jacob Jones",
+        "position": "Meta",
+        "img": "/image/user4.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Outstanding Support",
+        "review": "Support team was extremely helpful. The system feels modern, stable and thoughtfully built. Our team enjoyed using this platform in production.",
+        "rating": 5,
+        "name": "Cody Fisher",
+        "position": "Amazon",
+        "img": "/image/user5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Perfect For Our Needs",
+        "review": "A beautifully crafted platform with powerful design tools. Performance is excellent and customization options saved us a lot of development time.",
+        "rating": 5,
+        "name": "Jenny Wilson",
+        "position": "LinkedIn",
+        "img": "/image/user6.jpg"
+    }
+]
