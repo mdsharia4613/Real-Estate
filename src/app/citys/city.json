@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "cityName": "New York",
+        "totalProperty": 15,
+        "img": "/image/city1.jpg"
+    },
+    {
+        "id": 2,
+        "cityName": "Los Angeles",
+        "totalProperty": 12,
+        "img": "/image/city2.jpg"
+    },
+    {
+        "id": 3,
+        "cityName": "Toronto",
+        "totalProperty": 18,
+        "img": "/image/city3.jpg"
+    },
+    {
+        "id": 4,
+        "cityName": "Vancouver",
+        "totalProperty": 10,
+        "img": "/image/city4.jpg"
+    },
+    {
+        "id": 5,
+        "cityName": "London",
+        "totalProperty": 14,
+        "img": "/image/city5.jpg"
+    },
+    {
+        "id": 6,
+        "cityName": "Dubai",
+        "totalProperty": 20,
+        "img": "/image/city6.jpg"
+    },
+    {
+        "id": 7,
+        "cityName": "Berlin",
+        "totalProperty": 9,
+        "img": "/image/city7.jpg"
+    },
+    {
+        "id": 8,
+        "cityName": "Sydney",
+        "totalProperty": 11,
+        "img": "/image/city8.jpg"
+    },
+    {
+        "id": 9,
+        "cityName": "Amsterdam",
+        "totalProperty": 7,
+        "img": "/image/city9.jpg"
+    },
+    {
+        "id": 10,
+        "cityName": "Lisbon",
+        "totalProperty": 6,
+        "img": "/image/city10.jpg"
+    }
+]
