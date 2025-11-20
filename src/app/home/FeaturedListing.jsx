@@ -24,8 +24,8 @@ const FeaturedListing = () => {
 
         // Initialize AOS
         AOS.init({
-            duration: 800,  // animation duration
-            once: false       // animation occur only once
+            duration: 800,
+            once: false
         });
     }, [])
 
@@ -67,7 +67,7 @@ const FeaturedListing = () => {
                         <div
                             key={card.id}
                             className="bg-white rounded-xl shadow-lg flex flex-col justify-between hover:shadow-2xl transition duration-300 mb-16 space-y-3 relative group"
-                             data-aos="zoom-in-up"   // <-- AOS animation added here
+                            data-aos="zoom-in-up"
                         >
 
                             {/* Image Section */}
@@ -98,7 +98,8 @@ const FeaturedListing = () => {
                             <div className='flex justify-between items-center px-4 py-3'>
                                 <p className="font-semibold hover:text-[#eb6753] transition duration-500">{card.propertyStatus}</p>
                                 <div className='flex items-center gap-3 text-gray-600'>
-                                    <FaArrowUpRightFromSquare className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
+                                    <Link href="/listing"><FaArrowUpRightFromSquare className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
+                                    </Link>
                                     <FaRegCopy className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
                                     <FaRegHeart className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
                                 </div>
