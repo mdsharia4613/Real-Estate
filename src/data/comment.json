@@ -12,7 +12,7 @@
         "id": 2,
         "title": "Excellent Experience",
         "review": "The platform is extremely flexible, user-friendly and super fast. Customizing layouts was smoother than expected. Perfect for building modern real estate interfaces.",
-        "rating": 5,
+        "rating": 4,
         "name": "Floyd Miles",
         "position": "Bank of America",
         "img": "/image/c2.png"
@@ -30,7 +30,7 @@
         "id": 4,
         "title": "Superb Quality",
         "review": "The cloud-based features and optimized performance helped improve our workflow significantly. The design customization experience is top-notch.",
-        "rating": 5,
+        "rating": 4,
         "name": "Jacob Jones",
         "position": "Meta",
         "img": "/image/c4.png"
