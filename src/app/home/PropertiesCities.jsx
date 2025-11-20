@@ -76,12 +76,12 @@ const PropertiesCities = () => {
                                     height={200}
                                     src={city.img}
                                     alt={city.totalProperty}
-                                    className="w-full  object-contain transition-transform duration-700 ease-in-out transform hover:scale-110 hover:-rotate-6"
+                                    className="w-full h-[390px]   object-cover transition-transform duration-700 ease-in-out transform hover:scale-110 hover:-rotate-6"
                                 />
 
 
-                                <h2 className="absolute top-3 left-3 text-white text-sm font-semibold">{city.cityName} </h2>
-                                <p className="absolute top-8 left-2 text-gray-300 ">{city.totalProperty}</p>
+                                <h2 className="absolute top-3 left-3 text-white text-[18px] font-semibold">{city.cityName} </h2>
+                                <p className="absolute top-8 left-2 text-gray-300 ">{city.totalProperty} property</p>
 
                                 {/* Hover overlay */}
                                 {hoveredIndex === index && (

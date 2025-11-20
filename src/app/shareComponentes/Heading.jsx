@@ -5,7 +5,7 @@ const Heading = ({title,highlight, des}) => {
     return (
         <div className='my-10'>
             <div className='space-y-2'>
-                <h1 className='text-3xl font-bold'>
+                <h1 className='text-3xl font-bold text-gray-800'>
                     {parts[0]}
                     <span className='cpr'>{highlight}</span>
                     {parts[1]}
