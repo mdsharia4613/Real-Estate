@@ -6,7 +6,7 @@
         "rating": 5,
         "name": "Leslie Alexander",
         "position": "Nintendo",
-        "img": "/image/user1.jpg"
+        "img": "/image/c1.png"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "rating": 5,
         "name": "Floyd Miles",
         "position": "Bank of America",
-        "img": "/image/user2.jpg"
+        "img": "/image/c2.png"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "rating": 5,
         "name": "Courtney Henry",
         "position": "Google",
-        "img": "/image/user3.jpg"
+        "img": "/image/c3.png"
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "rating": 5,
         "name": "Jacob Jones",
         "position": "Meta",
-        "img": "/image/user4.jpg"
+        "img": "/image/c4.png"
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "rating": 5,
         "name": "Cody Fisher",
         "position": "Amazon",
-        "img": "/image/user5.jpg"
+        "img": "/image/c5.png"
     },
     {
         "id": 6,
@@ -51,6 +51,6 @@
         "rating": 5,
         "name": "Jenny Wilson",
         "position": "LinkedIn",
-        "img": "/image/user6.jpg"
+        "img": "/image/c6.png"
     }
 ]

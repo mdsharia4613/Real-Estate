@@ -62,7 +62,7 @@ const PropertiesCities = () => {
                 </button>
 
                 <div className="embla overflow-hidden" ref={emblaRef}>
-                    <div className="embla__container flex gap-6 mb-20">
+                    <div data-aos="zoom-in-up" className="embla__container flex gap-6 mb-20">
                         {citys.map((city, index) => (
                             <div
                                 key={city.id}
