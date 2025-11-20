@@ -11,7 +11,10 @@ import { FaStar } from "react-icons/fa6";
 
 const Comments = () => {
     const [emblaRef, emblaApi] = useEmblaCarousel(
-        { loop: true, align: "start" },
+        { loop: true, align: "start", 
+             dragFree: true,  
+            skipSnaps: false,
+        },
         [
             Autoplay({
                 delay: 3000,
