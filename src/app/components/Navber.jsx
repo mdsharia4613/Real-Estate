@@ -5,10 +5,13 @@ import { TbHomeEco } from "react-icons/tb";
 import { FaUserCircle, FaRegHeart } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import { FaChevronDown } from "react-icons/fa6";
+import { useWishlist } from "../context/WishlistProvider";
 
 const Navber = () => {
     const pathname = usePathname();
     const [scroll, setScroll] = useState(false);
+    const {whislist} = useWishlist();
+    console.log("wishliust", whislist.length)
 
     // Detect scroll
     useEffect(() => {
@@ -150,7 +153,7 @@ const Navber = () => {
 
                 {/* RIGHT */}
                 <div className="navbar-end flex items-center gap-4 text-gray-700">
-                    <FaRegHeart className="text-xl cursor-pointer hover:text-[#eb6753]" />
+                    <Link className="flex items-center gap-2" href="#"><FaRegHeart className="text-xl cursor-pointer hover:text-[#eb6753]" />{whislist.length}</Link>
                     <FaUserCircle className="text-xl cursor-pointer hover:text-[#eb6753]" />
                     <Link href="/login" className="hover:text-[#eb6753] ">Login</Link>
                 </div>

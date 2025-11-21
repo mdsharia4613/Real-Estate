@@ -3,6 +3,7 @@ import "./globals.css";
 import Navber from "./components/Navber";
 import Footer from "./components/Footer";
 import CustomCursor from "./components/CustomCursor";
+import { WishlistProvider } from "./context/WishlistProvider";
 
 
 const geistSans = Geist({
@@ -29,10 +30,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning={true}
       >
-        <CustomCursor></CustomCursor>
-        <Navber></Navber>
-        {children}
-        <Footer></Footer>
+        <WishlistProvider>
+          <CustomCursor></CustomCursor>
+          <Navber></Navber>
+          {children}
+          <Footer></Footer>
+        </WishlistProvider>
       </body>
     </html>
   );

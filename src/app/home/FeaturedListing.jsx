@@ -13,9 +13,13 @@ import { FaRegCopy, FaRegHeart } from 'react-icons/fa';
 import { HiOutlineLightningBolt } from "react-icons/hi";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useWishlist } from '../context/WishlistProvider';
 
 const FeaturedListing = () => {
     const [cards, setCards] = useState([]);
+    const {  addToWishlist } = useWishlist();
+    // const isInWishlist = whislist.some((i) => i.id === property.id);
+
 
     useEffect(() => {
         fetch("/data.json")
@@ -98,10 +102,11 @@ const FeaturedListing = () => {
                             <div className='flex justify-between items-center px-4 py-3'>
                                 <p className="font-semibold hover:text-[#eb6753] transition duration-500 underline-effectD">{card.propertyStatus}</p>
                                 <div className='flex items-center gap-3 text-gray-600'>
-                                    <Link href="/listing"><FaArrowUpRightFromSquare className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
+                                    <Link href="/listing">
+                                        <FaArrowUpRightFromSquare className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
                                     </Link>
                                     <FaRegCopy className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
-                                    <FaRegHeart className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
+                                    <button onClick={() => addToWishlist(card)}><FaRegHeart className="cursor-pointer hover:text-[#eb6753] transition duration-500" /></button>
                                 </div>
                             </div>
 
