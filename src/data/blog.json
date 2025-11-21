@@ -3,156 +3,156 @@
         "id": 1,
         "category": "Home Improvement",
         "title": "10 Easy Ways to Upgrade Your Living Room",
-        "img": "/image/blog1.jpg",
+        "img": "/image/blog_banner.jpg",
         "date": {
             "day": 12,
             "month": "Jan",
             "year": 2025
         },
         "authName": "David Miller",
-        "authImg": "/image/auth1.jpg"
+        "authImg": "/image/c1.png"
     },
     {
         "id": 2,
         "category": "Home Improvement",
         "title": "How to Make Your Kitchen More Energy Efficient",
-        "img": "/image/blog2.jpg",
+        "img": "/image/blog_banner.jpg",
         "date": {
             "day": 19,
             "month": "Feb",
             "year": 2025
         },
         "authName": "Sophia Turner",
-        "authImg": "/image/auth2.jpg"
+        "authImg": "/image/c2.png"
     },
     {
         "id": 3,
         "category": "Life & Style",
         "title": "Top 5 Home Decor Trends for 2025",
-        "img": "/image/blog3.jpg",
+        "img": "/image/blog_banner.jpg",
         "date": {
             "day": 5,
             "month": "Mar",
             "year": 2025
         },
         "authName": "Emma Wilson",
-        "authImg": "/image/auth3.jpg"
+        "authImg": "/image/c3.png"
     },
     {
         "id": 4,
         "category": "Life & Style",
         "title": "How to Create a Minimalist Bedroom Setup",
-        "img": "/image/blog4.jpg",
+        "img": "/image/blog_banner.jpg",
         "date": {
             "day": 18,
             "month": "Apr",
             "year": 2025
         },
         "authName": "Daniel Smith",
-        "authImg": "/image/auth4.jpg"
+        "authImg": "/image/c4.png"
     },
     {
         "id": 5,
         "category": "Finance",
         "title": "Smart Budgeting Tips for First-Time Home Buyers",
-        "img": "/image/blog5.jpg",
+        "img": "/image/blog_banner.jpg",
         "date": {
             "day": 22,
             "month": "May",
             "year": 2025
         },
         "authName": "Olivia Brown",
-        "authImg": "/image/auth5.jpg"
+        "authImg": "/image/c5.png"
     },
     {
         "id": 6,
         "category": "Finance",
         "title": "How to Save Money on Home Renovation in 2025",
-        "img": "/image/blog6.jpg",
+        "img": "/image/blog_banner.jpg",
         "date": {
             "day": 30,
             "month": "Jun",
             "year": 2025
         },
         "authName": "Michael Adams",
-        "authImg": "/image/auth6.jpg"
+        "authImg": "/image/c6.png"
     },
     {
         "id": 7,
         "category": "Selling a Home",
         "title": "Best Tips to Increase Home Value Before Selling",
-        "img": "/image/blog7.jpg",
+        "img": "/image/blog_banner.jpg",
         "date": {
             "day": 11,
             "month": "Jul",
             "year": 2025
         },
         "authName": "Jessica Lee",
-        "authImg": "/image/auth7.jpg"
+        "authImg": "/image/c7.png"
     },
     {
         "id": 8,
         "category": "Selling a Home",
         "title": "How to Stage Your Home Professionally",
-        "img": "/image/blog8.jpg",
+        "img": "/image/blog_banner.jpg",
         "date": {
             "day": 26,
             "month": "Aug",
             "year": 2025
         },
         "authName": "Chris Johnson",
-        "authImg": "/image/auth8.jpg"
+        "authImg": "/image/c8.png"
     },
     {
         "id": 9,
         "category": "Renting a Home",
         "title": "Essential Checklist for New Renters",
-        "img": "/image/blog9.jpg",
+        "img": "/image/blog_banner.jpg",
         "date": {
             "day": 14,
             "month": "Sep",
             "year": 2025
         },
         "authName": "Emily Davis",
-        "authImg": "/image/auth9.jpg"
+        "authImg": "/image/c1.png"
     },
     {
         "id": 10,
         "category": "Renting a Home",
         "title": "How to Find an Affordable Apartment in 2025",
-        "img": "/image/blog10.jpg",
+        "img": "/image/blog_banner.jpg",
         "date": {
             "day": 3,
             "month": "Oct",
             "year": 2025
         },
         "authName": "Robert King",
-        "authImg": "/image/auth10.jpg"
+        "authImg": "/image/c2.png"
     },
     {
         "id": 11,
         "category": "Buying a Home",
         "title": "Things to Check Before Buying a New Home",
-        "img": "/image/blog11.jpg",
+        "img": "/image/blog_banner.jpg",
         "date": {
             "day": 21,
             "month": "Nov",
             "year": 2025
         },
         "authName": "Sarah Martinez",
-        "authImg": "/image/auth11.jpg"
+        "authImg": "/image/c3.png"
     },
     {
         "id": 12,
         "category": "Buying a Home",
         "title": "Mortgage Guide for First-Time Buyers",
-        "img": "/image/blog12.jpg",
+        "img": "/image/blog_banner.jpg",
         "date": {
             "day": 8,
             "month": "Dec",
             "year": 2025
         },
         "authName": "William Harris",
-        "authImg": "/image/auth12.jpg"
+        "authImg": "/image/c4.png"
     }
 ]
