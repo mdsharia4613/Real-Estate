@@ -39,7 +39,7 @@ const BlogPage = () => {
             </div>
 
             {/* Blog List */}
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredBlogs.map(blog => (
                     <div key={blog.id} className="p-4 shadow rounded-xl bg-white">
                         <Image src={blog.img} className="rounded-lg mb-3 h-50" alt={blog.title} width={550} height={100}/>

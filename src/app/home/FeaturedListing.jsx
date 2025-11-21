@@ -83,7 +83,7 @@ const FeaturedListing = () => {
 
                             {/* Title & Address */}
                             <div className='space-y-2 flex flex-col items-center mt-4 px-4'>
-                                <Link href="/listing" className="text-lg font-semibold hover:text-[#eb6753] transition-all duration-500 text-center">{card.title}</Link>
+                                <Link href="/listing" className="text-lg font-semibold hover:text-[#eb6753] transition-all duration-500 text-center underline-effect">{card.title}</Link>
                                 <p className="text-sm text-gray-500 text-center">{card.address[0].street}, {card.address[0].city}, {card.address[0].stateCountry}</p>
                             </div>
 
@@ -96,7 +96,7 @@ const FeaturedListing = () => {
 
                             {/* Status & Actions */}
                             <div className='flex justify-between items-center px-4 py-3'>
-                                <p className="font-semibold hover:text-[#eb6753] transition duration-500">{card.propertyStatus}</p>
+                                <p className="font-semibold hover:text-[#eb6753] transition duration-500 underline-effect">{card.propertyStatus}</p>
                                 <div className='flex items-center gap-3 text-gray-600'>
                                     <Link href="/listing"><FaArrowUpRightFromSquare className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
                                     </Link>
