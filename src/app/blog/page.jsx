@@ -1,10 +1,20 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import  blogsData  from "@/data/blog.json";
 import Image from "next/image";
 import Link from "next/link";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const BlogPage = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: false
+        });
+
+        setTimeout(() => AOS.refresh(), 300);
+    }, [])
     const [selectedCategory, setSelectedCategory] = useState("All");
 
     // blog unique
@@ -42,7 +52,7 @@ const BlogPage = () => {
             {/* Blog List */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredBlogs.map(blog => (
-                    <div key={blog.id} className="p-4 shadow rounded-xl bg-white">
+                    <div data-aos="zoom-in-up" key={blog.id} className="p-4 shadow rounded-xl bg-white">
                         <Image src={blog.img} className="rounded-lg mb-3 h-50" alt={blog.title} width={550} height={100}/>
 
                         <Link href={`/blog/${blog.id}`}><h2 className="text-xl font-semibold mb-2 text-gray-700 hover:text-[#eb6753] transition duration-500 underline-effect">{blog.title}</h2></Link>
