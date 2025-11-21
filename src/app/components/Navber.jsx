@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { TbHomeEco } from "react-icons/tb";
 import { FaUserCircle, FaRegHeart } from "react-icons/fa";
 import { usePathname } from "next/navigation";
+import { FaChevronDown } from "react-icons/fa6";
 
 const Navber = () => {
     const pathname = usePathname();
@@ -76,13 +77,14 @@ const Navber = () => {
                             </li>
 
                             <li className={`dropdown dropdown-hover ${isActive("/pages")}`}>
-                                <div tabIndex={0} role="button" className="m-1">
+                                <div tabIndex={0} role="button" className="m-1 flex items-center gap-2">
                                     <Link href="/pages">Pages</Link>
+                                    <FaChevronDown />
                                 </div>
 
                                 <ul
                                     tabIndex={0}
-                                    className="dropdown-content z-[50] menu p-2 shadow bg-orange-100 rounded-box w-52"
+                                    className="dropdown-content z-[50] menu p-2 shadow bg-white rounded-box w-52"
                                 >
                                     <li className="text-gray-700"><Link href="/about">About</Link></li>
                                     <li className="text-gray-700"><Link href="/contact">Contact</Link></li>
@@ -123,13 +125,15 @@ const Navber = () => {
                         </li>
 
                         <li className={`dropdown dropdown-hover ${isActive("/pages")}`}>
-                            <div tabIndex={0} role="button" className="m-1">
+                            <div tabIndex={0} role="button" className="m-1 flex items-center gap-1.5">
                                 <Link href="/pages">Pages</Link>
+                                <FaChevronDown />
+
                             </div>
 
                             <ul
                                 tabIndex={0}
-                                className="dropdown-content z-[50] menu p-2 shadow bg-orange-100 rounded-box w-52"
+                                className="dropdown-content z-[50] menu p-2 shadow  bg-white rounded-box w-52"
                             >
                                 <li className="text-gray-700"><Link href="/about">About</Link></li>
                                 <li className="text-gray-700"><Link href="/contact">Contact</Link></li>
