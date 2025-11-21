@@ -10,8 +10,7 @@ export const WishlistProvider = ({ children }) => {
     const [whislist, setWhislist] = useState([]);
 
     const addToWishlist = (item) => {
-
-        // CHECK BEFORE SET STATE — NO SIDE EFFECT INSIDE setState
+        
         const already = whislist.some((i) => i.id === item.id);
 
         if (already) {
@@ -19,10 +18,10 @@ export const WishlistProvider = ({ children }) => {
             return;
         }
 
-        // SAFE state update (no side-effects inside)
+       
         setWhislist((prev) => [...prev, item]);
 
-        // toast outside state updater
+       
         toast.success("Added to wishlist", { position: "top-center" });
     };
 
