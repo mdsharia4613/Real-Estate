@@ -11,8 +11,10 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { MdOutlineBathroom } from "react-icons/md"; 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useWishlist } from '../context/WishlistProvider';
 
 const Listing = () => {
+    const { addToWishlist } = useWishlist()
     useEffect(() => {
             AOS.init({
                 duration: 800,
@@ -169,7 +171,7 @@ const Listing = () => {
                                         <div className='flex items-center gap-3 text-gray-600'>
                                             <Link href={`/listing/${card.id}`}><FaArrowUpRightFromSquare className="cursor-pointer hover:text-[#eb6753]" /></Link>
                                             <FaRegCopy className="cursor-pointer hover:text-[#eb6753]" />
-                                            <FaRegHeart className="cursor-pointer hover:text-[#eb6753]" />
+                                            <button onClick={() => addToWishlist(card)}>                                            <FaRegHeart className="cursor-pointer hover:text-[#eb6753]" /></button>
                                         </div>
                                     </div>
 
