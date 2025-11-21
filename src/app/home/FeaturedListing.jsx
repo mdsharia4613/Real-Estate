@@ -105,7 +105,7 @@ const FeaturedListing = () => {
                                 </div>
                             </div>
 
-                            <div className='absolute bg-white px-4 py-1.5 rounded-xl top-56 left-3'>
+                            <div className='absolute bg-white px-4 py-1.5 rounded-xl top-46 md:top-56 left-3'>
                                 <span className='font-semibold'>${card.newPrice} </span>/ mo
                             </div>
 
