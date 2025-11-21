@@ -9,8 +9,18 @@ import { HiOutlineLightningBolt } from "react-icons/hi";
 import Link from 'next/link';
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { MdOutlineBathroom } from "react-icons/md";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Listing = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: false
+        });
+
+        setTimeout(() => AOS.refresh(), 300);
+    }, [])
 
     const [items, setItems] = useState([]);
 
@@ -120,7 +130,7 @@ const Listing = () => {
                         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
 
                             {filteredItems.map(card => (
-                                <div
+                                <div data-aos="zoom-in-up"
                                     key={card.id}
                                     className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 relative group"
                                 >
