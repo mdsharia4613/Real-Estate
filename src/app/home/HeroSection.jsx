@@ -25,7 +25,7 @@ const HeroSection = () => {
             : "text-gray-500 hover:text-[#eb6753]";
 
     return (
-        <div className="banner pt-32 text-white flex flex-col items-center justify-center text-center px-4">
+        <div className="banner pt-32  text-white flex flex-col items-center justify-center text-center px-4">
             <div data-aos="fade-up">
                 <h2 className="text-sm  font-medium">THE BEST WAY TO</h2>
                 <h1 className="text-4xl md:text-6xl font-bold my-3">Find Your Dream Home</h1>
