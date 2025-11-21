@@ -135,7 +135,7 @@ const Page = () => {
 
             <div className="bg-[#fef4f3] py-16">
                 <div className="container mx-auto px-6 md:px-24 lg:px-36">
-                    <div className="  rounded-xl p-10 flex flex-col md:flex-row justify-between items-center gap-10">
+                    <div data-aos="zoom-in-up" className="  rounded-xl p-10 flex flex-col md:flex-row justify-between items-center gap-10">
 
                         {/* Left Content */}
                         <div className="space-y-6 max-w-lg">
