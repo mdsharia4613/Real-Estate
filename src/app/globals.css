@@ -66,8 +66,8 @@ body {
   width: 100%;
 }
 .cursor {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border: 2px solid #eb6753;
   background-color: #eb6753;
   border-radius: 50%;
