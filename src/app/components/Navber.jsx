@@ -75,8 +75,21 @@ const Navber = () => {
                                 <Link href="/blog">Blog</Link>
                             </li>
 
-                            <li className={isActive("/pages")}>
-                                <Link href="/pages">Pages</Link>
+                            <li className={`dropdown dropdown-hover ${isActive("/pages")}`}>
+                                <div tabIndex={0} role="button" className="m-1">
+                                    <Link href="/pages">Pages</Link>
+                                </div>
+
+                                <ul
+                                    tabIndex={0}
+                                    className="dropdown-content z-[50] menu p-2 shadow bg-orange-100 rounded-box w-52"
+                                >
+                                    <li className="text-gray-700"><Link href="/about">About</Link></li>
+                                    <li className="text-gray-700"><Link href="/contact">Contact</Link></li>
+                                    <li className="text-gray-700"><Link href="#">Compate</Link></li>
+                                    <li className="text-gray-700"><Link href="#">Pricing</Link></li>
+                                    <li className="text-gray-700"><Link href="#">Faq</Link></li>
+                                </ul>
                             </li>
 
 
@@ -116,13 +129,13 @@ const Navber = () => {
 
                             <ul
                                 tabIndex={0}
-                                className="dropdown-content z-[50] menu p-2 shadow bg-base-100 rounded-box w-52"
+                                className="dropdown-content z-[50] menu p-2 shadow bg-orange-100 rounded-box w-52"
                             >
                                 <li className="text-gray-700"><Link href="/about">About</Link></li>
                                 <li className="text-gray-700"><Link href="/contact">Contact</Link></li>
-                                <li className="text-gray-700"><Link href="/Compate">Compate</Link></li>
-                                <li className="text-gray-700"><Link href="/pricing">Pricing</Link></li>
-                                <li className="text-gray-700"><Link href="/faq">Faq</Link></li>
+                                <li className="text-gray-700"><Link href="#">Compate</Link></li>
+                                <li className="text-gray-700"><Link href="#">Pricing</Link></li>
+                                <li className="text-gray-700"><Link href="#">Faq</Link></li>
                             </ul>
                         </li>
 
