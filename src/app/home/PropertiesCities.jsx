@@ -19,7 +19,15 @@ const PropertiesCities = () => {
             duration: 800,
             once: false
         });
+        const refreshAOS = () => {
+            setTimeout(() => {
+                AOS.refresh();
+            }, 500);
+        };
+
+        refreshAOS();
     }, []);
+    
 
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
 
@@ -62,48 +70,54 @@ const PropertiesCities = () => {
                 </button>
 
                 <div className="embla overflow-hidden" ref={emblaRef}>
-                    <div  className="embla__container flex gap-6 mb-20">
+                    <div className="embla__container flex gap-6 mb-20">
+
                         {citys.map((city, index) => (
-                            <div
-                                key={city.id}
-                                className="embla__slide min-w-[250px] relative rounded-xl overflow-hidden cursor-pointer"
-                                onMouseEnter={() => setHoveredIndex(index)}
-                                onMouseLeave={() => setHoveredIndex(null)}
-                            >
+                            <div key={city.id} className="embla__slide min-w-[250px] relative">
 
-                                <Image
-                                    width={350}
-                                    height={200}
-                                    src={city.img}
-                                    alt={city.totalProperty}
-                                    className="w-full h-[390px]   object-cover transition-transform duration-700 ease-in-out transform hover:scale-110 hover:-rotate-6"
-                                />
+                                {/* AOS wrapper */}
+                                <div
+                                    data-aos="zoom-in-up"
+                                    className="rounded-xl overflow-hidden cursor-pointer"
+                                    onMouseEnter={() => setHoveredIndex(index)}
+                                    onMouseLeave={() => setHoveredIndex(null)}
+                                >
 
+                                    <Image
+                                        width={350}
+                                        height={200}
+                                        src={city.img}
+                                        alt={city.totalProperty}
+                                        className="w-full h-[390px] object-cover transition-transform duration-700 ease-in-out transform hover:scale-110 hover:-rotate-6"
+                                    />
 
-                                <h2 className="absolute top-3 left-3 text-white text-[18px] font-semibold">{city.cityName} </h2>
-                                <p className="absolute top-8 left-2 text-gray-300 ">{city.totalProperty} property</p>
+                                    <h2 className="absolute top-3 left-3 text-white text-[18px] font-semibold">
+                                        {city.cityName}
+                                    </h2>
 
-                                {/* Hover overlay */}
-                                {hoveredIndex === index && (
-                                    <Link
-                                        href="/listing"
-                                        className="absolute inset-0 bg-black/60 bg-opacity-40 flex items-center justify-center text-white  text-sm transition-opacity"
-                                    >
-                                        <div className="flex items-center gap-2 absolute bottom-3 left-2">
-                                            <p>See All City</p>
-                                            <FaArrowUpRightFromSquare />
+                                    <p className="absolute top-8 left-2 text-gray-300 ">
+                                        {city.totalProperty} property
+                                    </p>
 
-                                        </div>
-                                    </Link>
+                                    {hoveredIndex === index && (
+                                        <Link
+                                            href="/listing"
+                                            className="absolute inset-0 bg-black/60 flex items-end justify-start text-white p-3"
+                                        >
+                                            <div className="flex items-center gap-2">
+                                                <p>See All City</p>
+                                                <FaArrowUpRightFromSquare />
+                                            </div>
+                                        </Link>
+                                    )}
+                                </div>
 
-                                    
-
-                                    
-                                )}
                             </div>
                         ))}
+
                     </div>
                 </div>
+
             </div>
         </div>
     );

@@ -16,7 +16,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.embla__slide {
+  will-change: auto !important;
+}
 
+.embla__container {
+  transform: none !important;
+}
 
 .banner {
   background-image: url("/image/banner.jpg");

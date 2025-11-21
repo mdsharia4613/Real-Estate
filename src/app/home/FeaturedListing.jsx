@@ -96,7 +96,7 @@ const FeaturedListing = () => {
 
                             {/* Status & Actions */}
                             <div className='flex justify-between items-center px-4 py-3'>
-                                <p className="font-semibold hover:text-[#eb6753] transition duration-500 underline-effect">{card.propertyStatus}</p>
+                                <p className="font-semibold hover:text-[#eb6753] transition duration-500 underline-effectD">{card.propertyStatus}</p>
                                 <div className='flex items-center gap-3 text-gray-600'>
                                     <Link href="/listing"><FaArrowUpRightFromSquare className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
                                     </Link>
