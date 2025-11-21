@@ -1,12 +1,23 @@
-import React from 'react';
+"use client"
+import React, { useEffect } from 'react';
 import blogs from "@/data/blog.json"
 import Image from 'next/image';
 import Heading from '../shareComponentes/Heading';
 import Link from 'next/link';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Blog = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: false
+        });
+
+        setTimeout(() => AOS.refresh(), 300);
+    }, [])
     return (
-        <div className='container mx-auto px-10 md:px-20 py-16'>
+        <div data-aos="zoom-in-up" className='container mx-auto px-10 md:px-20 py-16'>
 
             <Heading
                 title="From Our Blog"

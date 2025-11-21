@@ -1,18 +1,30 @@
 "use client";
-import React from 'react';
+import React, { useEffect } from 'react';
 import Heading from '../shareComponentes/Heading';
 import { FaCheckCircle } from 'react-icons/fa';
 import { GoArrowUpRight } from "react-icons/go";
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const SellingOption = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: false
+        });
+
+        setTimeout(() => AOS.refresh(), 300);
+    }, [])
+
     return (
         <div className='container px-10 md:px-16 mb-28 flex flex-col md:flex-row justify-center items-center gap-10'>
 
-            {/* Left Text Section */}
-            <div className='max-w-md space-y-5'>
+            {/* AOS inside wrapper (NOT parent) */}
+            <div data-aos="zoom-in-up" className='max-w-md space-y-5'>
                 <Heading title={"Let’s find the right selling option for you"} />
 
                 <p className='text-gray-600 text-sm'>
@@ -21,34 +33,34 @@ const SellingOption = () => {
 
                 <div className='space-y-3'>
                     <p className='flex items-center gap-2 font-semibold text-gray-800'>
-                        <FaCheckCircle className='' /> Find excellent deals
+                        <FaCheckCircle /> Find excellent deals
                     </p>
                     <p className='flex items-center gap-2 font-semibold text-gray-800'>
-                        <FaCheckCircle className='' /> Friendly host & Fast support
+                        <FaCheckCircle /> Friendly host & Fast support
                     </p>
                     <p className='flex items-center gap-2 font-semibold text-gray-800'>
-                        <FaCheckCircle className='' /> List your own property
+                        <FaCheckCircle /> List your own property
                     </p>
                 </div>
 
-                <Link href="/listing">  <button className='flex items-center gap-2 border-2 border-gray-800 px-5 py-2 rounded-lg font-semibold transition hover:bg-gray-800 hover:text-white mt-3'>
-                    Learn More <GoArrowUpRight />
-                </button></Link>
+                <Link href="/listing">
+                    <button className='flex items-center gap-2 border-2 border-gray-800 px-5 py-2 rounded-lg font-semibold transition hover:bg-gray-800 hover:text-white mt-3'>
+                        Learn More <GoArrowUpRight />
+                    </button>
+                </Link>
             </div>
 
             {/* Right Image Group */}
-            <div className='flex gap-3 relative'>
+            <div data-aos="zoom-in-up" className='flex gap-3 relative'>
 
-                {/* Image 1 */}
                 <Image
                     src="/image/option_3.jpg"
                     alt=""
                     width={280}
                     height={300}
-                    className='rounded-2xl  h-80 translate-y-36 object-contain'
+                    className='rounded-2xl h-80 translate-y-36 object-contain'
                 />
 
-                {/* Image 2 */}
                 <Image
                     src="/image/option_2.jpg"
                     alt=""
@@ -57,7 +69,6 @@ const SellingOption = () => {
                     className='rounded-2xl shadow-lg object-cover'
                 />
 
-                {/* Floating Badge Image */}
                 <motion.div
                     animate={{ y: [0, -20, 0] }}
                     transition={{ duration: 3, repeat: Infinity }}
