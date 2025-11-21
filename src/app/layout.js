@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navber from "./components/Navber";
 import Footer from "./components/Footer";
-import 'aos/dist/aos.css';
+import CustomCursor from "./components/CustomCursor";
 
 
 const geistSans = Geist({
@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning={true}
       >
+        <CustomCursor></CustomCursor>
         <Navber></Navber>
         {children}
         <Footer></Footer>

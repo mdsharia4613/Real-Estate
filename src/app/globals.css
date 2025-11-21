@@ -65,3 +65,17 @@ body {
 .underline-effect:hover::after {
   width: 100%;
 }
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #eb6753;
+  background-color: #eb6753;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+}
+
