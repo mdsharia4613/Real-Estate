@@ -42,7 +42,7 @@ const page = () => {
                 <div className='container mx-auto '>
 
                     <div className='flex justify-center mt-20 gap-20 items-center'>
-                        {/* LEFT CARD (Position Same) */}
+                        {/* LEFT item (Position Same) */}
                         <div className="max-w-lg ">
                             <div className="bg-white p-10 rounded-2xl shadow-xl border border-gray-200 backdrop-blur-sm">
 

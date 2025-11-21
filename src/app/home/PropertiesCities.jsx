@@ -34,7 +34,7 @@ const PropertiesCities = () => {
     const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
     const scrollNext = () => emblaApi && emblaApi.scrollNext();
 
-    // hover state for each card
+    // hover state for each item
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (

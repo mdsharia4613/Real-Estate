@@ -10,7 +10,7 @@ import { CiCalendarDate, CiHome, CiShare2 } from "react-icons/ci";
 import Image from "next/image";
 
 
-const SingleCard = () => {
+const Singleitem = () => {
     const { id } = useParams();
     const [items, setItems] = useState(null);
     const tabs = ["Education", "Health", "Transport"];
@@ -362,4 +362,4 @@ const SingleCard = () => {
     );
 };
 
-export default SingleCard;
+export default Singleitem;

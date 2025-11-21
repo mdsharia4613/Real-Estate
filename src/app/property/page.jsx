@@ -126,22 +126,22 @@ const Listing = () => {
                         ))}
                     </div>
 
-                    {/* ================= RIGHT SIDE — CARD LIST ================= */}
+                    {/* ================= RIGHT SIDE — item LIST ================= */}
                     <div className='col-span-12 md:col-span-9'>
 
                         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
 
-                            {filteredItems.map(card => (
+                            {filteredItems.map(item => (
                                 <div data-aos="zoom-in-up"
-                                    key={card.id}
+                                    key={item.id}
                                     className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 relative group"
                                 >
 
                                     {/* Image */}
                                     <div className='overflow-hidden rounded-t-xl'>
                                         <Image
-                                            src={card.img}
-                                            alt={card.title}
+                                            src={item.img}
+                                            alt={item.title}
                                             width={360}
                                             height={150}
                                             className="w-full h-50 md:h-60 lg:h-64 object-cover transition duration-500 group-hover:scale-105"
@@ -150,34 +150,34 @@ const Listing = () => {
 
                                     {/* Title */}
                                     <div className='space-y-2 mt-4 px-4'>
-                                        <Link href={`/listing/${card.id}`} className="text-lg font-semibold hover:text-[#eb6753] transition">
-                                            {card.title}
+                                        <Link href={`/listing/${item.id}`} className="text-lg font-semibold hover:text-[#eb6753] transition">
+                                            {item.title}
                                         </Link>
                                         <p className="text-sm text-gray-500">
-                                            {card.address?.[0]?.street}, {card.address?.[0]?.city}
+                                            {item.address?.[0]?.street}, {item.address?.[0]?.city}
                                         </p>
                                     </div>
 
                                     {/* Details */}
                                     <div className='flex justify-between items-center border-t border-gray-200 pt-3 px-4 mt-3'>
-                                        <p className='flex items-center gap-1'><IoBedOutline />{card.bedrooms} bed</p>
-                                        <p className='flex items-center gap-1'><MdOutlineBathroom />{card.bathrooms} bath</p>
-                                        <p className='flex items-center gap-1'><LandPlot />{card.propertySize}</p>
+                                        <p className='flex items-center gap-1'><IoBedOutline />{item.bedrooms} bed</p>
+                                        <p className='flex items-center gap-1'><MdOutlineBathroom />{item.bathrooms} bath</p>
+                                        <p className='flex items-center gap-1'><LandPlot />{item.propertySize}</p>
                                     </div>
 
                                     {/* Status & Actions */}
                                     <div className='flex justify-between items-center px-4 py-3'>
-                                        <p className="font-semibold">{card.propertyStatus}</p>
+                                        <p className="font-semibold">{item.propertyStatus}</p>
                                         <div className='flex items-center gap-3 text-gray-600'>
-                                            <Link href={`/listing/${card.id}`}><FaArrowUpRightFromSquare className="cursor-pointer hover:text-[#eb6753]" /></Link>
+                                            <Link href={`/listing/${item.id}`}><FaArrowUpRightFromSquare className="cursor-pointer hover:text-[#eb6753]" /></Link>
                                             <FaRegCopy className="cursor-pointer hover:text-[#eb6753]" />
-                                            <button onClick={() => addToWishlist(card)}><FaRegHeart className="cursor-pointer hover:text-[#eb6753]" /></button>
+                                            <button onClick={() => addToWishlist(item)}><FaRegHeart className="cursor-pointer hover:text-[#eb6753]" /></button>
                                         </div>
                                     </div>
 
                                     {/* Price badge */}
                                     <div className='absolute bg-white px-4 py-1.5 rounded-xl top-4 md:top-50 left-3 shadow'>
-                                        <span className='font-semibold'>${card.newPrice}</span> / mo
+                                        <span className='font-semibold'>${item.newPrice}</span> / mo
                                     </div>
 
                                     {/* Featured Tag */}

@@ -10,7 +10,7 @@ export const WishlistProvider = ({children}) => {
         setWhislist((prev) => {
             const existingWish = prev.find( i => i.id === item.id)
             if(existingWish){
-                alert("card already added");
+                alert("item already added");
                 return prev;
             } else {
                 return[...prev, item]

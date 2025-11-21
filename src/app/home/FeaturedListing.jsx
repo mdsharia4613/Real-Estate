@@ -16,7 +16,7 @@ import 'aos/dist/aos.css';
 import { useWishlist } from '../context/WishlistProvider';
 
 const FeaturedListing = () => {
-    const [cards, setCards] = useState([]);
+    const [items, setitems] = useState([]);
     const {  addToWishlist } = useWishlist();
     // const isInWishlist = whislist.some((i) => i.id === property.id);
 
@@ -24,7 +24,7 @@ const FeaturedListing = () => {
     useEffect(() => {
         fetch("/data.json")
             .then(res => res.json())
-            .then(data => setCards(data));
+            .then(data => setitems(data));
 
         // Initialize AOS
         AOS.init({
@@ -67,9 +67,9 @@ const FeaturedListing = () => {
                     dotListClass="absolute bottom-2"
                     itemClass="px-5"
                 >
-                    {cards.map(card => (
+                    {items.map(item => (
                         <div
-                            key={card.id}
+                            key={item.id}
                             className="bg-white rounded-xl shadow-lg flex flex-col justify-between hover:shadow-2xl transition duration-300 mb-16 space-y-3 relative group"
                             data-aos="zoom-in-up"
                         >
@@ -77,8 +77,8 @@ const FeaturedListing = () => {
                             {/* Image Section */}
                             <div className='overflow-hidden rounded-t-xl'>
                                 <Image
-                                    src={card.img}
-                                    alt={card.title}
+                                    src={item.img}
+                                    alt={item.title}
                                     width={450}
                                     height={200}
                                     className="w-full h-56 md:h-64 lg:h-72 object-cover transition-transform duration-500 hover:scale-105 hover:-rotate-3"
@@ -87,31 +87,31 @@ const FeaturedListing = () => {
 
                             {/* Title & Address */}
                             <div className='space-y-2 flex flex-col items-center mt-4 px-4'>
-                                <Link href="/listing" className="text-lg font-semibold hover:text-[#eb6753] transition-all duration-500 text-center underline-effect">{card.title}</Link>
-                                <p className="text-sm text-gray-500 text-center">{card.address[0].street}, {card.address[0].city}, {card.address[0].stateCountry}</p>
+                                <Link href="/listing" className="text-lg font-semibold hover:text-[#eb6753] transition-all duration-500 text-center underline-effect">{item.title}</Link>
+                                <p className="text-sm text-gray-500 text-center">{item.address[0].street}, {item.address[0].city}, {item.address[0].stateCountry}</p>
                             </div>
 
                             {/* Property Details */}
                             <div className='flex justify-between items-center border-t border-gray-200 pt-3 px-4 mt-3'>
-                                <p className='flex items-center gap-1 hover:text-[#eb6753] transition duration-500'><IoBedOutline />{card.bedrooms} bed</p>
-                                <p className='flex items-center gap-1 hover:text-[#eb6753] transition duration-500'><MdOutlineBathroom />{card.bathrooms} bath</p>
-                                <p className='flex items-center gap-1 hover:text-[#eb6753] transition duration-500'><LandPlot />{card.propertySize}</p>
+                                <p className='flex items-center gap-1 hover:text-[#eb6753] transition duration-500'><IoBedOutline />{item.bedrooms} bed</p>
+                                <p className='flex items-center gap-1 hover:text-[#eb6753] transition duration-500'><MdOutlineBathroom />{item.bathrooms} bath</p>
+                                <p className='flex items-center gap-1 hover:text-[#eb6753] transition duration-500'><LandPlot />{item.propertySize}</p>
                             </div>
 
                             {/* Status & Actions */}
                             <div className='flex justify-between items-center px-4 py-3'>
-                                <p className="font-semibold hover:text-[#eb6753] transition duration-500 underline-effectD">{card.propertyStatus}</p>
+                                <p className="font-semibold hover:text-[#eb6753] transition duration-500 underline-effectD">{item.propertyStatus}</p>
                                 <div className='flex items-center gap-3 text-gray-600'>
                                     <Link href="/listing">
                                         <FaArrowUpRightFromSquare className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
                                     </Link>
                                     <FaRegCopy className="cursor-pointer hover:text-[#eb6753] transition duration-500" />
-                                    <button onClick={() => addToWishlist(card)}><FaRegHeart className="cursor-pointer hover:text-[#eb6753] transition duration-500" /></button>
+                                    <button onClick={() => addToWishlist(item)}><FaRegHeart className="cursor-pointer hover:text-[#eb6753] transition duration-500" /></button>
                                 </div>
                             </div>
 
                             <div className='absolute bg-white px-4 py-1.5 rounded-xl top-46 md:top-56 left-3'>
-                                <span className='font-semibold'>${card.newPrice} </span>/ mo
+                                <span className='font-semibold'>${item.newPrice} </span>/ mo
                             </div>
 
                             <div className='bgcpr absolute text-white px-3 py-1.5 flex items-center gap-1 rounded-xl top-2 left-2 opacity-100 scale-100 transition-all duration-500 
