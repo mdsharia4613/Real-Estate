@@ -51,14 +51,14 @@ const SellingOption = () => {
             </div>
 
             {/* Right Image Group */}
-            <div data-aos="zoom-in-up" className='flex gap-3 relative'>
+            <div data-aos="zoom-in-up" className='flex flex-col md:flex-row gap-3 relative'>
 
                 <Image
                     src="/image/option_3.jpg"
                     alt=""
                     width={280}
                     height={300}
-                    className='rounded-2xl h-80 translate-y-36 object-contain'
+                    className='rounded-2xl md:h-80 md:translate-y-36 object-contain'
                 />
 
                 <Image
