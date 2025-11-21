@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Blog = () => {
     return (
-        <div className='container mx-auto px-10 md:px-20 py-10'>
+        <div className='container mx-auto px-10 md:px-20 py-16'>
 
             <Heading
                 title="From Our Blog"
@@ -14,7 +14,7 @@ const Blog = () => {
             />
 
             {/* Grid Outside */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
 
                 {blogs.slice(0, 3).map(blog => (
                     <div key={blog.id} className="p-4 shadow rounded-xl bg-white space-y-5 ">
