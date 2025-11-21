@@ -33,3 +33,29 @@ body {
 .cpr{
   color: #eb6753;
 }
+
+.underline-effect {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to right, #eb6753, #ff8b73);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.underline-effect::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #eb6753, #ff8b73);
+  box-shadow: 0 0 10px #eb6753, 0 0 20px #ff8b73;
+  transition: width 0.4s ease-in-out;
+  border-radius: 2px;
+}
+
+.underline-effect:hover::after {
+  width: 100%;
+}

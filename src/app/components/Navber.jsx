@@ -58,11 +58,26 @@ const Navber = () => {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-white rounded-box mt-3 w-52 p-2 shadow text-black font-semibold"
                         >
-                            <li className={isActive("/")}><Link href="/">Home</Link></li>
-                            <li className={isActive("/listing")}><Link href="/listing">Listing</Link></li>
-                            <li className={isActive("/property")}><Link href="/property">Property</Link></li>
-                            <li className={isActive("/blog")}><Link href="/blog">Blog</Link></li>
-                            <li className={isActive("/pages")}><Link href="/pages">Pages</Link></li>
+                            <li className={`${isActive("/") ? "underline-effect" : ""}`}>
+                                <Link href="/">Home</Link>
+                            </li>
+
+                            <li className={`${isActive("/listing") ? "underline-effect" : ""}`}>
+                                <Link href="/listing">Listing</Link>
+                            </li>
+
+                            <li className={`${isActive("/property") ? "underline-effect" : ""}`}>
+                                <Link href="/property">Property</Link>
+                            </li>
+
+                            <li className={`${isActive("/blog") ? "underline-effect" : ""}`}>
+                                <Link href="/blog">Blog</Link>
+                            </li>
+
+                            <li className={`${isActive("/pages") ? "underline-effect" : ""}`}>
+                                <Link href="/pages">Pages</Link>
+                            </li>
+
                         </ul>
                     </div>
 
@@ -76,11 +91,26 @@ const Navber = () => {
                 {/* CENTER */}
                 <div className="navbar-center hidden lg:flex">
                     <ul className="flex items-center gap-10 px-1 font-semibold text-gray-700">
-                        <li className={isActive("/")}><Link href="/">Home</Link></li>
-                        <li className={isActive("/listing")}><Link href="/listing">Listing</Link></li>
-                        <li className={isActive("/property")}><Link href="/property">Property</Link></li>
-                        <li className={isActive("/blog")}><Link href="/blog">Blog</Link></li>
-                        <li className={isActive("/pages")}><Link href="/pages">Pages</Link></li>
+                        <li className={`${isActive("/") ? "underline-effect" : ""}`}>
+                            <Link href="/">Home</Link>
+                        </li>
+
+                        <li className={`${isActive("/listing") ? "underline-effect" : ""}`}>
+                            <Link href="/listing">Listing</Link>
+                        </li>
+
+                        <li className={`${isActive("/property") ? "underline-effect" : ""}`}>
+                            <Link href="/property">Property</Link>
+                        </li>
+
+                        <li className={`${isActive("/blog") ? "underline-effect" : ""}`}>
+                            <Link href="/blog">Blog</Link>
+                        </li>
+
+                        <li className={`${isActive("/pages") ? "underline-effect" : ""}`}>
+                            <Link href="/pages">Pages</Link>
+                        </li>
+
                     </ul>
                 </div>
 

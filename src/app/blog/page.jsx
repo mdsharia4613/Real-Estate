@@ -44,7 +44,7 @@ const BlogPage = () => {
                     <div key={blog.id} className="p-4 shadow rounded-xl bg-white">
                         <Image src={blog.img} className="rounded-lg mb-3 h-50" alt={blog.title} width={550} height={100}/>
 
-                        <h2 className="text-xl font-semibold mb-2 text-gray-700 hover:text-[#eb6753] transition duration-500">{blog.title}</h2>
+                        <h2 className="text-xl font-semibold mb-2 text-gray-700 hover:text-[#eb6753] transition duration-500 underline-effect">{blog.title}</h2>
 
                         <p className="text-sm text-gray-600 mb-1">
                             {blog.date.day} {blog.date.month}, {blog.date.year}
