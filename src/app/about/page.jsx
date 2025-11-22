@@ -6,7 +6,7 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import Heading from "../shareComponentes/Heading";
 import { BsHouseHeart } from "react-icons/bs";
-import { CiCredititem1 } from "react-icons/ci";
+import { CiCreditCard1 } from "react-icons/ci";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { AiOutlinePropertySafety } from "react-icons/ai";
@@ -89,7 +89,7 @@ const Page = () => {
                         </div>
 
                         <div className="flex flex-col gap-2 p-5 rounded-xl hover:shadow-lg transition cursor-pointer w-full">
-                            <CiCredititem1 className="text-6xl rounded-full hover:bg-[#eb6753] bg-gray-50 p-3 hover:text-white transition duration-500" />
+                            <CiCreditCard1 className="text-6xl rounded-full hover:bg-[#eb6753] bg-gray-50 p-3 hover:text-white transition duration-500" />
                             <h2 className="text-xl font-semibold">Secure Payment</h2>
                             <p className="text-sm text-gray-500 leading-relaxed">
                                 Nullam sollicitudin blandit Nullam maximus.
