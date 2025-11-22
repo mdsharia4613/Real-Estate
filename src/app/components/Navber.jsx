@@ -155,7 +155,7 @@ const Navber = () => {
                 <div className="navbar-end flex items-center gap-4 text-gray-700">
                     <Link className="flex items-center gap-2" href="/wishlist"><FaRegHeart className="text-xl cursor-pointer hover:text-[#eb6753]" />{whislist.length}</Link>
                     <FaUserCircle className="text-xl cursor-pointer hover:text-[#eb6753]" />
-                    <Link href="/login" className="hover:text-[#eb6753] ">Login</Link>
+                    <Link href="#" className="hover:text-[#eb6753] ">Login</Link>
                 </div>
             </div>
         </div>
